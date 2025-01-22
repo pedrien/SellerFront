@@ -83,7 +83,7 @@ body {
 
 .btn {
   font-size: var(--fnt-14);
-  border-radius: var(--borderRadius-8);
+  border-radius: var(--borderRadius-50);
   transition: var(--transition-3);
   &.btn-default {
     padding: 8px 12px;
@@ -211,10 +211,7 @@ hr {
     color: var(--colorMuted);
   }
 }
-.bande {
-  padding: 10px 0;
-  background: var(--colorTitre);
-}
+
 .navbar {
   background: #ffffffef;
   backdrop-filter: blur(14px);
@@ -237,6 +234,11 @@ hr {
       background: var(--colorTitre);
       cursor: pointer;
       flex: 0 0 auto;
+    }
+    p {
+      font-weight: var(--fw-600);
+      font-size: var(--fnt-14);
+      color: var(--colorTitre);
     }
     .content-search {
       .form-bg {
@@ -345,12 +347,15 @@ hr {
     color: var(--colorTitre);
   }
 }
+.text-primary {
+  color: var(--primaryColor)!important;
+}
 
 .banner {
   .content-banner {
     width: 98%;
-    background: var(--bgFond);
-    border-radius: var(--borderRadius-12);
+    background: var(--lightRed);
+    border-radius: var(--borderRadius-24);
     height: 370px;
     padding: 10px 0;
     padding-bottom: 0;
@@ -431,8 +436,8 @@ hr {
         }
       }
       .img-category {
-        width: 46px;
-        height: 46px;
+        width: 56px;
+        height: 56px;
         overflow: hidden;
         border-radius: var(--borderRadius-r-50);
       }
@@ -456,11 +461,32 @@ hr {
     scrollbar-width: none;
     .item-product {
       background: var(--bgFond);
-      padding: 14px;
-      border-radius: var(--borderRadius-12);
+      padding: 18px;
+      border-radius: var(--borderRadius-24);
       width: 220px;
-      min-height: 250px;
+      min-height: 270px;
       flex: 0 0 auto;
+
+      .content-img {
+        height: 130px;
+      }
+      .like {
+        width: 32px;
+        height: 32px;
+        background: var(--whiteColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--borderRadius-8);
+        color: var(--colorTitre);
+      }
+
+      .name-article {
+        h5 {
+          color: var(--colorTitre);
+          font-size: var(--fnt-16);
+        }
+      }
 
       .price {
         color: var(--colorTitre);
@@ -470,15 +496,16 @@ hr {
 
       .btn-cart {
         padding: 0;
-        width: 32px;
-        height: 32px;
-        border-radius: var(--borderRadius-8);
+        width: 40px;
+        height: 40px;
+        border-radius: var(--borderRadius-12);
         background: var(--colorTitre);
         border: none;
         color: var(--whiteColor);
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: var(--fnt-18);
         &:hover {
           background: var(--primaryColor);
         }
