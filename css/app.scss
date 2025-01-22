@@ -216,7 +216,8 @@ hr {
   background: var(--colorTitre);
 }
 .navbar {
-  background: var(--bgCard);
+  background: #ffffffef;
+  backdrop-filter: blur(14px);
   padding: 0;
   border-bottom: 1px solid var(--colorBorder);
   .logo-app {
@@ -348,7 +349,7 @@ hr {
 .banner {
   .content-banner {
     width: 98%;
-    background: var(--lightRed);
+    background: var(--bgFond);
     border-radius: var(--borderRadius-12);
     height: 370px;
     padding: 10px 0;
@@ -389,17 +390,31 @@ hr {
     }
   }
 }
-
+.title-block {
+  font-size: var(--fnt-26);
+  color: var(--colorTitre);
+}
+.link {
+  color: var(--primaryColor);
+  font-size: var(--fnt-14);
+  transition: var(--transition-3);
+  font-weight: var(--fw-600);
+  &:hover {
+    color: var(--primaryColor);
+  }
+}
 .slide-category {
   padding: 30px 0;
   h2 {
     font-size: var(--fnt-24);
   }
   .content-category {
-    overflow: hidden;
-    overflow-x: auto;
-    scrollbar-width: none;
+    // overflow: hidden;
+    // overflow-x: auto;
+    // scrollbar-width: none;
     scroll-behavior: smooth;
+    flex-wrap: wrap;
+    justify-content: center;
     .idem-category {
       flex: 0 0 auto;
       cursor: pointer;
@@ -435,6 +450,41 @@ hr {
 
 .block-product-slide {
   padding: 30px 0;
+  .content-product {
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    .item-product {
+      background: var(--bgFond);
+      padding: 14px;
+      border-radius: var(--borderRadius-12);
+      width: 220px;
+      min-height: 250px;
+      flex: 0 0 auto;
+
+      .price {
+        color: var(--colorTitre);
+        font-size: var(--fnt-14);
+        font-weight: var(--fw-600);
+      }
+
+      .btn-cart {
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: var(--borderRadius-8);
+        background: var(--colorTitre);
+        border: none;
+        color: var(--whiteColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background: var(--primaryColor);
+        }
+      }
+    }
+  }
 }
 
 
