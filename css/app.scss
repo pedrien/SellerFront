@@ -7,8 +7,8 @@
   --colorTitre: #171717;
   --bgFond: #f8f8f8;
   --bgCard: #fff;
-  --colorMuted: #697288;
-  --colorBorder: #dee2eb;
+  --colorMuted: #8a7a7a;
+  --colorBorder: #eef0f6;
   --colorBorderTr: #ebeef5;
   --redColor: #df5656;
   --greenColor: #44b6a1;
@@ -102,6 +102,9 @@ body {
     &:hover {
       border-color: var(--colorTitre);
     }
+  }
+  &.btn-sm {
+    font-size: var(--fnt-12);
   }
 }
 a {
@@ -354,7 +357,7 @@ hr {
 .banner {
   .content-banner {
     width: 98%;
-    background: var(--lightRed);
+    background: var(--bgBadgeDanger);
     border-radius: var(--borderRadius-24);
     height: 370px;
     padding: 10px 0;
@@ -380,6 +383,7 @@ hr {
       justify-content: center;
       position: relative;
       .circle {
+        display: none;
         position: absolute;
         z-index: -1;
         width: 370px;
@@ -390,13 +394,13 @@ hr {
       }
 
       img {
-        width: 290px;
+        width: 320px;
       }
     }
   }
 }
 .title-block {
-  font-size: var(--fnt-26);
+  font-size: var(--fnt-24);
   color: var(--colorTitre);
 }
 .link {
@@ -466,6 +470,11 @@ hr {
       width: 220px;
       min-height: 270px;
       flex: 0 0 auto;
+      transition: var(--transition-3);
+
+      &:hover {
+        transform: scale(1.05);
+      }
 
       .content-img {
         height: 130px;
@@ -484,7 +493,11 @@ hr {
       .name-article {
         h5 {
           color: var(--colorTitre);
-          font-size: var(--fnt-16);
+          font-size: var(--fnt-15);
+        }
+        p {
+          color: var(--colorMuted);
+          font-size: var(--fnt-14);
         }
       }
 
@@ -510,6 +523,44 @@ hr {
           background: var(--primaryColor);
         }
       }
+    }
+  }
+}
+
+.footer-page {
+  background: var(--bgCard);
+  .content-footer {
+    border-top: 1px solid var(--colorBorder);
+    padding: 30px 0;
+    .title-footer {
+      font-size: var(--fnt-18);
+      color: var(--colorTitre);
+    }
+    .list-link-footer {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      
+      li {
+        padding: 3px 0;
+        a {
+          color: var(--colorMuted);
+          font-size: var(--fnt-14);
+          transition: var(--transition-3);
+          &:hover {
+            color: var(--colorTitre);
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 10px 0;
+    background: var(--bgFond);
+    
+    p {
+      color: var(--colorTitre);
+      font-size: var(--fnt-12);
     }
   }
 }
