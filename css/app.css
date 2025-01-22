@@ -95,6 +95,11 @@ body {
 .btn.btn-sm {
   font-size: var(--fnt-12);
 }
+.btn.btn-black {
+  background: var(--colorTitre);
+  color: var(--whiteColor);
+  border-color: var(--colorTitre);
+}
 
 a {
   text-decoration: none;
@@ -517,4 +522,18 @@ hr {
 .footer-page .footer-bottom p {
   color: var(--colorTitre);
   font-size: var(--fnt-12);
+}
+.footer-page .footer-bottom h6 {
+  font-size: var(--fnt-14);
+  color: var(--colorTitre);
+}
+.footer-page .footer-bottom .link-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--borderRadius-r-50);
+  background: var(--colorTitre);
+  color: var(--whiteColor);
 }/*# sourceMappingURL=app.css.map */
