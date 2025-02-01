@@ -8,7 +8,7 @@
   --colorTitre: #171717;
   --bgFond: #f8f8f8;
   --bgCard: #fff;
-  --colorMuted: #8a7a7a;
+  --colorMuted: #8c8686;
   --colorBorder: #eef0f6;
   --colorBorderTr: #ebeef5;
   --redColor: #df5656;
@@ -71,7 +71,7 @@ body {
 
 .btn {
   font-size: var(--fnt-14);
-  border-radius: var(--borderRadius-50);
+  border-radius: var(--borderRadius-8);
   transition: var(--transition-3);
 }
 .btn.btn-default {
@@ -134,6 +134,7 @@ a {
   justify-content: center;
   font-weight: var(--fw-600);
   font-size: var(--fnt-14);
+  color: var(--colorTitre);
 }
 .avatar img {
   width: 100%;
@@ -344,14 +345,14 @@ hr {
   z-index: 1;
 }
 .banner .content-banner .title-banner {
-  color: var(--colorTitre);
+  color: var(--whiteColor);
   font-size: 48px;
 }
 .banner .content-banner .title-banner span {
   font-weight: 600;
 }
 .banner .content-banner p {
-  color: var(--colorTitre);
+  color: var(--whiteColor);
 }
 .banner .content-banner .content-banner-right {
   display: flex;
@@ -414,8 +415,8 @@ hr {
   color: var(--whiteColor);
 }
 .slide-category .content-category .idem-category .img-category {
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
   overflow: hidden;
   border-radius: var(--borderRadius-r-50);
 }
@@ -423,6 +424,7 @@ hr {
   font-size: var(--fnt-12);
   color: var(--colorTitre);
   transition: var(--transition-3);
+  font-weight: var(--fw-600);
 }
 
 .block-product-slide {
@@ -473,8 +475,8 @@ hr {
 }
 .block-product-slide .content-product .item-product .btn-cart {
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--borderRadius-12);
   background: var(--colorTitre);
   border: none;
@@ -482,7 +484,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--fnt-18);
+  font-size: var(--fnt-16);
 }
 .block-product-slide .content-product .item-product .btn-cart:hover {
   background: var(--primaryColor);
@@ -536,4 +538,187 @@ hr {
   border-radius: var(--borderRadius-r-50);
   background: var(--colorTitre);
   color: var(--whiteColor);
+}
+
+.text-muted {
+  color: var(--colorMuted);
+}
+
+.text-sm {
+  font-size: var(--fnt-14);
+}
+
+.block-login {
+  position: relative;
+  z-index: 1;
+}
+.block-login .card-login {
+  border-color: var(--colorBorder);
+  border-radius: var(--borderRadius-24);
+  padding: 28px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.0196078431);
+}
+.block-login .card-login h1 {
+  color: var(--colorTitre);
+  font-size: var(--fnt-26);
+  font-weight: var(--fw-600);
+}
+.block-login .card-login .icon-input {
+  position: absolute;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  background: var(--bgFond);
+  right: 10px;
+  cursor: pointer;
+  font-size: var(--fnt-14);
+  color: var(--colorMuted);
+  transition: var(--transition-3);
+}
+.block-login .card-login .icon-input:hover {
+  color: var(--colorTitre);
+}
+.block-login .card-login .label-black {
+  font-weight: var(--fw-600);
+  font-size: var(--fnt-12);
+}
+.block-login .card-login .form-control {
+  background: var(--bgFond);
+  border: none;
+  padding-left: 14px;
+  box-shadow: none;
+  font-size: var(--fnt-14);
+  color: var(--colorTitre);
+  border-radius: var(--borderRadius-8);
+}
+.block-login .card-login .form-control::-moz-placeholder {
+  color: var(--colorMuted);
+  opacity: 0.6;
+}
+.block-login .card-login .form-control::placeholder {
+  color: var(--colorMuted);
+  opacity: 0.6;
+}
+.block-login .card-login input, .block-login .card-login .btn-lg {
+  height: 42px;
+}
+.block-login .card-login .link {
+  color: var(--colorTitre);
+  font-size: var(--fnt-13);
+}
+.block-login .card-login .link:hover {
+  color: var(--primaryColor);
+}
+.block-login .card-login .link-login-network {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--colorBorder);
+  border-radius: var(--borderRadius-r-50);
+  transition: var(--transition-3);
+}
+.block-login .card-login .link-login-network:hover {
+  background: var(--bgFond);
+  border-color: transparent;
+}
+.block-login .card-login .link-login-network img {
+  width: 20px;
+}
+
+.block-favoris {
+  padding: 30px 0;
+}
+
+.list-nav-filter {
+  list-style: none;
+  padding-left: 0;
+}
+.list-nav-filter li a {
+  font-size: var(--fnt-14);
+  color: var(--colorMuted);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  transition: var(--transition-3);
+  position: relative;
+}
+.list-nav-filter li a:hover {
+  color: var(--colorTitre);
+}
+.list-nav-filter li a::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: var(--colorTitre);
+  bottom: 0;
+  border-radius: var(--borderRadius-8);
+  display: none;
+}
+.list-nav-filter li a.active {
+  color: var(--colorTitre);
+  font-weight: var(--fw-500);
+}
+.list-nav-filter li a.active::before {
+  display: block;
+}
+
+.card-product {
+  border: none;
+  border-radius: var(--borderRadius-24);
+  background: var(--bgFond);
+  transition: var(--transition-3);
+  transform: scale(1);
+  will-change: transform;
+}
+.card-product:hover {
+  transform: scale(1.05);
+}
+.card-product.sm {
+  padding: 14px;
+  border-radius: 18px;
+}
+.card-product.sm .content-img {
+  height: 84px;
+}
+.card-product.sm .name-article h5 {
+  font-size: var(--fnt-14);
+}
+.card-product.sm .name-article p {
+  color: var(--colorMuted);
+  font-size: var(--fnt-12);
+}
+.card-product.sm .price {
+  color: var(--colorTitre);
+  font-size: var(--fnt-13);
+  font-weight: var(--fw-600);
+}
+.card-product.sm .btn-cart {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--borderRadius-8);
+  background: var(--colorTitre);
+  border: none;
+  color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fnt-14);
+}
+.card-product.sm .like {
+  width: 24px;
+  height: 24px;
+  background: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--borderRadius-8);
+  color: var(--colorTitre);
+  font-size: var(--fnt-14);
+}
+.card-product.sm .like.liked {
+  color: var(--primaryColor);
 }/*# sourceMappingURL=app.css.map */
