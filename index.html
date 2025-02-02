@@ -72,17 +72,24 @@
                       class="d-flex align-items-center justify-content-end gap-lg-4 content-nav-right h-100"
                     >
                       <a
-                        href="#"
-                        class="link-icon d-flex align-items-center justify-content-center"
+                        href="#panier"
+                        class="link-icon d-flex align-items-center justify-content-center tooltip-hover" data-position-tooltip="bottom" data-bs-toggle="offcanvas" aria-controls="offcanvasRight"
                       >
                         <div class="indice">2</div>
                         <i class="fi fi-rr-shopping-cart"></i>
+                        <span class="tooltip-indicator">
+                          Panier
+                        </span>
                       </a>
                       <a
                         href="favoris.html"
-                        class="link-icon d-flex align-items-center justify-content-center"
+                        class="link-icon d-flex align-items-center justify-content-center tooltip-hover" data-position-tooltip="bottom"
+                        
                       >
                         <i class="fi fi-rr-heart"></i>
+                        <span class="tooltip-indicator">
+                          Favoris
+                        </span>
                       </a>
                       <a href="login.html">
                         <div class="avatar">
@@ -1014,5 +1021,215 @@
         <!-- FOOTER -->
       </div>
     </div>
+    
+    <!-- PANIER -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="panier" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Mon panier</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fi fi-rr-cross"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="all-article-in-cart d-flex flex-column gap-2">
+          <div class="d-flex align-items-center mb-2">
+            <p class="text muted xm mb-0">
+              4 items
+            </p>
+            <button class="btn btn-border btn-sm ms-auto">
+              Vider mon panier
+            </button>
+          </div>
+          <div class="card card-cart">
+            <button href="#" class=" btn btn-remove-in-cart">
+              <i class="fi fi-rr-cross"></i>
+            </button>
+            <div class="row g-2 g-lg-3">
+              <div class="col-3">
+                <div class="block-img">
+                  <img src="images/food.png" alt="img" class="w-100 h-100 object-fit-contain">
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="row g-2 align-items-center">
+                  <div class="col-8">
+                    <div class="block-info-article">
+                      <h6 class="mb-1">
+                        Viande de boeuf grillé
+                      </h6>
+                      <p class="mb-1">300g</p>
+                      <div class="price">
+                        30$
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="block-quantity">
+                      <div class="content-block d-flex align-items-center">
+                        <button class="btn btn-action" id="btn-up">
+                          <i class="fi fi-rr-moins">
+                            <i class="fi fi-sr-minus"></i>
+                          </i>
+                        </button>
+                        <input type="text" class="form-control text-center" value="1">
+                        <button class="btn btn-action" id="btn-down">
+                          <i class="fi fi-rr-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-cart">
+            <button href="#" class=" btn btn-remove-in-cart">
+              <i class="fi fi-rr-cross"></i>
+            </button>
+            <div class="row g-2 g-lg-3">
+              <div class="col-3">
+                <div class="block-img">
+                  <img src="images/food.png" alt="img" class="w-100 h-100 object-fit-contain">
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="row g-2 align-items-center">
+                  <div class="col-8">
+                    <div class="block-info-article">
+                      <h6 class="mb-1">
+                        Viande de boeuf grillé
+                      </h6>
+                      <p class="mb-1">300g</p>
+                      <div class="price">
+                        30$
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="block-quantity">
+                      <div class="content-block d-flex align-items-center">
+                        <button class="btn btn-action" id="btn-up">
+                          <i class="fi fi-rr-moins">
+                            <i class="fi fi-sr-minus"></i>
+                          </i>
+                        </button>
+                        <input type="text" class="form-control text-center" value="1">
+                        <button class="btn btn-action" id="btn-down">
+                          <i class="fi fi-rr-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-cart">
+            <button href="#" class=" btn btn-remove-in-cart">
+              <i class="fi fi-rr-cross"></i>
+            </button>
+            <div class="row g-2 g-lg-3">
+              <div class="col-3">
+                <div class="block-img">
+                  <img src="images/food.png" alt="img" class="w-100 h-100 object-fit-contain">
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="row g-2 align-items-center">
+                  <div class="col-8">
+                    <div class="block-info-article">
+                      <h6 class="mb-1">
+                        Viande de boeuf grillé
+                      </h6>
+                      <p class="mb-1">300g</p>
+                      <div class="price">
+                        30$
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="block-quantity">
+                      <div class="content-block d-flex align-items-center">
+                        <button class="btn btn-action" id="btn-up">
+                          <i class="fi fi-rr-moins">
+                            <i class="fi fi-sr-minus"></i>
+                          </i>
+                        </button>
+                        <input type="text" class="form-control text-center" value="1">
+                        <button class="btn btn-action" id="btn-down">
+                          <i class="fi fi-rr-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-cart">
+            <button href="#" class=" btn btn-remove-in-cart">
+              <i class="fi fi-rr-cross"></i>
+            </button>
+            <div class="row g-2 g-lg-3">
+              <div class="col-3">
+                <div class="block-img">
+                  <img src="images/food.png" alt="img" class="w-100 h-100 object-fit-contain">
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="row g-2 align-items-center">
+                  <div class="col-8">
+                    <div class="block-info-article">
+                      <h6 class="mb-1">
+                        Viande de boeuf grillé
+                      </h6>
+                      <p class="mb-1">300g</p>
+                      <div class="price">
+                        30$
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="block-quantity">
+                      <div class="content-block d-flex align-items-center">
+                        <button class="btn btn-action" id="btn-up">
+                          <i class="fi fi-rr-moins">
+                            <i class="fi fi-sr-minus"></i>
+                          </i>
+                        </button>
+                        <input type="text" class="form-control text-center" value="1">
+                        <button class="btn btn-action" id="btn-down">
+                          <i class="fi fi-rr-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer">
+        <div class="row align-items-center g-2">
+          <div class="col-8">
+            <p class="text muted sm mb-1">
+              Total à payer
+            </p>
+            <h5 class="text mb-0 fw-bold">
+              120$
+            </h5>
+          </div>
+          <div class="col-4">
+            <a href="#" class="btn btn-default btn-primary w-100">
+              Check-out
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PANIER -->
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
