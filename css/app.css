@@ -164,7 +164,7 @@ a {
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: var(--colorMuted);
+  color: var(--colorTitre);
   transition: 0.3s;
   border-radius: 8px;
 }
@@ -281,6 +281,49 @@ hr {
 }
 .navbar .link-icon:hover {
   color: var(--primaryColor);
+}
+
+.nav-category {
+  background: rgba(255, 255, 255, 0.937254902);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  padding: 0;
+  border-bottom: 1px solid var(--colorBorder);
+}
+.nav-category .list-category {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.nav-category .list-category li a {
+  display: inline-flex;
+  padding: 12px 18px;
+  font-size: var(--fnt-14);
+  color: var(--colorTitre);
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-3);
+  position: relative;
+}
+.nav-category .list-category li a::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: var(--primaryColor);
+  border-radius: 100%;
+  bottom: 4px;
+  display: none;
+}
+.nav-category .list-category li a:hover {
+  color: var(--primaryColor);
+}
+.nav-category .list-category li a.active {
+  font-weight: var(--fw-500);
+  color: var(--primaryColor);
+}
+.nav-category .list-category li a.active::before {
+  display: block;
 }
 
 .icon-widget {
@@ -401,6 +444,7 @@ hr {
   justify-content: center;
 }
 .slide-category .content-category .idem-category {
+  position: relative;
   flex: 0 0 auto;
   cursor: pointer;
   background: var(--bgFond);
@@ -707,6 +751,9 @@ hr {
   align-items: center;
   justify-content: center;
   font-size: var(--fnt-14);
+}
+.card-product.sm .btn-cart:hover {
+  background: var(--primaryColor);
 }
 .card-product.sm .like {
   width: 24px;
