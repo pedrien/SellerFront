@@ -604,7 +604,7 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: var(--borderRadius-8);
+        border-radius: var(--borderRadius-50);
         color: var(--colorTitre);
       }
 
@@ -888,7 +888,7 @@ hr {
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: var(--borderRadius-8);
+      border-radius: var(--borderRadius-50);
       color: var(--colorTitre);
       font-size: var(--fnt-14);
       &.liked {
