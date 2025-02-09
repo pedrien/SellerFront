@@ -14,12 +14,12 @@
     <div class="global-div">
       <div class="wrapper d-flex flex-column">
         <!-- NAVBAR -->
-        <header class="sticky-top">
-          <nav class="navbar navbar-expand-lg">
+        <header class="fixed-top">
+          <nav class="navbar">
             <div class="content-nav w-100">
               <div class="container-fluid px-lg-3 px-lg-4 px-xxl-4">
-                <div class="row g-lg-3 g-1">
-                  <div class="col-lg-3 col-xl-2">
+                <div class="row g-lg-3 g-1 align-items-center">
+                  <div class="col-lg-3 col-xl-2 col-3">
                     <div
                       class="d-flex align-items-center gap-lg-3 gap-xxl-5 gap-3 h-100"
                     >
@@ -30,13 +30,25 @@
                         <img
                           src="images/logoChakeckak.jpeg"
                           alt="logo Chackeckak"
+                          class="d-none d-lg-block"
+                        />
+                        <img
+                          src="images/iconApp.jpeg"
+                          alt="icon-app"
+                          class="d-block d-lg-none"
                         />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-8">
+                  <div class="col-lg-6 col-xl-8 col-6">
+                    <div class="text-center info-location d-lg-none">
+                      <p class="mb-0">Livraison</p>
+                      <h6 class="mb-0">
+                        <i class="fi fi-rr-marker"></i> Kinshasa
+                      </h6>
+                    </div>
                     <div
-                      class="content-nav-center h-100 d-flex align-items-center"
+                      class="content-nav-center h-100 d-none d-lg-flex align-items-center"
                     >
                       <div class="d-flex align-items-center w-100 gap-lg-5">
                         <div class="d-flex align-items-center gap-lg-3">
@@ -67,31 +79,39 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-xl-2">
+                  <div class="col-lg-3 col-xl-2 col-3">
                     <div
-                      class="d-flex align-items-center justify-content-end gap-lg-4 content-nav-right h-100"
+                      class="d-flex align-items-center justify-content-end gap-lg-4 gap-4 content-nav-right h-100"
                     >
                       <a
                         href="#panier"
-                        class="link-icon d-flex align-items-center justify-content-center tooltip-hover" data-position-tooltip="bottom" data-bs-toggle="offcanvas" aria-controls="offcanvasRight"
+                        class="link-icon d-none d-lg-flex align-items-center justify-content-center tooltip-hover"
+                        data-position-tooltip="bottom"
+                        data-bs-toggle="offcanvas"
+                        aria-controls="offcanvasRight"
                       >
                         <div class="indice">2</div>
                         <i class="fi fi-rr-shopping-cart"></i>
-                        <span class="tooltip-indicator">
-                          Panier
-                        </span>
+                        <span class="tooltip-indicator"> Panier </span>
                       </a>
                       <a
                         href="favoris.html"
-                        class="link-icon d-flex align-items-center justify-content-center tooltip-hover" data-position-tooltip="bottom"
-                        
+                        class="link-icon d-none d-lg-flex align-items-center justify-content-center tooltip-hover"
+                        data-position-tooltip="bottom"
                       >
                         <i class="fi fi-rr-heart"></i>
-                        <span class="tooltip-indicator">
-                          Favoris
-                        </span>
+                        <span class="tooltip-indicator"> Favoris </span>
                       </a>
-                      <a href="login.html">
+                      <a
+                      href="favoris.html"
+                      class="link-icon d-flex align-items-center justify-content-center tooltip-hover"
+                      data-position-tooltip="bottom"
+                    >
+                    <div class="indice">2</div>
+                      <i class="fi fi-rr-bell"></i>
+                      <span class="tooltip-indicator"> Notifications </span>
+                    </a>
+                      <a href="login.html" class="d-none d-lg-flex">
                         <div class="avatar">
                           <div class="icon-avatar">
                             <i class="fi fi-rr-user"></i>
@@ -109,9 +129,9 @@
 
         <!-- FAVORIS -->
         <div class="content-page flex-grow-1">
-          <section class="block-favoris">
+          <section class="block-favoris pt-0">
             <div class="container-fluid px-lg-3 px-xl-4">
-              <div class="text-center">
+              <div class="text-center  mt-3">
                 <h2 class="title-block mb-lg-3 mb-2">Favoris</h2>
               </div>
               <ul class="list-nav-filter d-flex align-items-center justify-content-lg-center mb-lg-4 mb-3">
@@ -132,7 +152,7 @@
                 </li>
               </ul>
               <div class="row g-lg-3 g-2">
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -152,7 +172,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -172,7 +192,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -192,7 +212,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -212,7 +232,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -232,7 +252,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -252,7 +272,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -272,7 +292,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -292,7 +312,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -312,7 +332,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -332,7 +352,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -352,7 +372,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -372,7 +392,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -392,7 +412,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -412,7 +432,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -432,7 +452,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -452,7 +472,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -472,7 +492,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-6 col-xl-2">
                   <div class="card card-product sm">
                     <a href="#" class="like liked ">
                       <i class="fi fi-rr-heart"></i>
@@ -506,7 +526,7 @@
               <a href="#" class="link ms-auto">Voir plus</a>
             </div>
           </div>
-          <div class="content-product px-xxl-4 px-2 py-lg-2 d-flex gap-lg-3">
+          <div class="content-product px-xxl-4 px-2 py-lg-2 d-flex gap-lg-3 gap-2">
             <div class="item-product d-flex flex-column">
               <a href="#" class="like">
                 <i class="fi fi-rr-heart"></i>
@@ -680,7 +700,7 @@
         <!-- RECOMMANDATIONS -->
 
         <!-- FOOTER -->
-        <footer class="footer-page">
+        <footer class="footer-page d-none d-lg-block">
           <div class="content-footer">
             <div class="container-fluid  px-lg-3 px-xxl-4">
                 <div class="row g-lg-4 g-xl-5">
@@ -913,6 +933,46 @@
           </div>
         </footer>
         <!-- FOOTER -->
+
+        <!-- TABBAR -->
+        <div class="tabBar position-fixed d-lg-none">
+          <div class="content-tab d-flex gap-4">
+            <a href="index.html" class="d-flex link-tab flex-column flex-1 align-items-center text-center">
+              <div class="icon">
+                <i class="fi fi-rr-home"></i>
+              </div>
+              <span>Accueil</span>
+            </a>
+            <a href="index.html" class="d-flex link-tab flex-column flex-1 align-items-center text-center">
+              <div class="icon">
+                <i class="fi fi-rr-apps"></i>
+              </div>
+              <span>Categories</span>
+            </a>
+            <a href="index.html" class="d-flex link-tab flex-column flex-1 align-items-center text-center">
+              <div class="icon">
+                <div class="indice">
+                  2
+                </div>
+                <i class="fi fi-rr-shopping-cart"></i>
+              </div>
+              <span>Panier</span>
+            </a>
+            <a href="favoris.html" class="active d-flex  link-tab flex-column flex-1 align-items-center text-center">
+              <div class="icon">
+                <i class="fi fi-rr-heart"></i>
+              </div>
+              <span>Favoris</span>
+            </a>
+            <a href="index.html" class="d-flex link-tab flex-column flex-1 align-items-center text-center">
+              <div class="icon">
+                <i class="fi fi-rr-user"></i>
+              </div>
+              <span>profil</span>
+            </a>
+          </div>
+         </div>
+         <!-- TABBAR -->
       </div>
     </div>
     <!-- PANIER -->
