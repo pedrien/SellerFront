@@ -240,6 +240,9 @@ hr {
   font-size: var(--fnt-20);
 }
 .text.lg {
+  font-size: var(--fnt-24);
+}
+.text.xl {
   font-size: var(--fnt-28);
 }
 .text.muted {
@@ -251,6 +254,135 @@ hr {
 }
 .content-page.pl-320 {
   padding-left: 320px;
+}
+
+.card-content-info-product {
+  border: none;
+  border-radius: var(--borderRadius-24);
+  padding: 0 34px;
+}
+.card-content-info-product .price {
+  font-weight: var(--fw-600);
+}
+.card-content-info-product .btn-black:hover {
+  background: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+.card-content-info-product .like {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--colorBorder);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border-radius: var(--borderRadius-8);
+  color: var(--colorTitre);
+  transition: var(--transition-3);
+}
+.card-content-info-product .like:hover {
+  border-color: var(--colorTitre);
+}
+.card-content-info-product .like.liked {
+  color: var(--whiteColor);
+  background: var(--colorTitre);
+  border-color: var(--colorTitre);
+}
+.card-content-info-product .block-quantity {
+  border-radius: var(--borderRadius-8);
+  padding: 8px;
+  border: 1px solid var(--colorTitre);
+  width: 120px;
+}
+.card-content-info-product .block-quantity .btn-action {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: var(--fnt-10);
+  color: var(--colorTitre);
+  transition: var(--transition-3);
+  border: none;
+}
+.card-content-info-product .block-quantity .btn-action:hover {
+  color: var(--colorTitre);
+}
+.card-content-info-product .block-quantity .form-control {
+  height: 22px;
+  border: none;
+  box-shadow: none;
+  font-size: var(--fnt-14);
+  background: none;
+}
+
+.carousel-product .carousel-indicators {
+  position: relative;
+  margin: 0;
+  inset: auto;
+  height: 450px;
+  justify-content: start;
+  scrollbar-width: none;
+  overflow-y: auto;
+  flex: 0 0 auto;
+}
+.carousel-product .carousel-indicators button {
+  text-indent: inherit;
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  border: none;
+  opacity: 1;
+  flex: 0 0 auto;
+}
+.carousel-product .carousel-indicators button .content-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--borderRadius-8);
+  background: var(--bgFond);
+  border: 1px solid transparent;
+}
+.carousel-product .carousel-indicators button .content-img img {
+  width: 40%;
+}
+.carousel-product .carousel-indicators button.active .content-img {
+  border: 1px solid var(--colorTitre);
+}
+
+.block-select-boxs .select-box {
+  position: relative;
+}
+.block-select-boxs .select-box span {
+  border: 1px solid var(--colorBorder);
+  border-radius: var(--borderRadius-8);
+  padding: 6px 10px;
+  font-size: var(--fnt-12);
+  color: var(--colorTitre);
+  transition: var(--transition-3);
+  cursor: pointer;
+  display: inline-flex;
+}
+.block-select-boxs .select-box:hover span {
+  border-color: var(--colorTitre);
+}
+.block-select-boxs .select-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.block-select-boxs .select-box input:checked + span {
+  background: var(--colorTitre);
+  color: var(--whiteColor);
+  border-color: var(--colorTitre);
 }
 
 .navbar {
@@ -580,7 +712,7 @@ hr {
   transform: scale(1.05);
 }
 .block-product-slide .content-product .item-product .content-img {
-  height: 160px;
+  height: 140px;
 }
 .block-product-slide .content-product .item-product .like {
   width: 32px;
@@ -608,8 +740,8 @@ hr {
 }
 .block-product-slide .content-product .item-product .btn-cart {
   padding: 0;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: var(--borderRadius-12);
   background: var(--colorTitre);
   border: none;
@@ -617,10 +749,32 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--fnt-16);
+  font-size: var(--fnt-14);
 }
 .block-product-slide .content-product .item-product .btn-cart:hover {
   background: var(--primaryColor);
+}
+
+.block-content-img-product {
+  background: var(--bgFond);
+  border-radius: var(--borderRadius-24);
+  padding: 20px;
+  width: 100%;
+  min-height: 450px;
+}
+.block-content-img-product img {
+  width: 50%;
+}
+
+.breadcrumb li {
+  font-size: var(--fnt-12);
+}
+.breadcrumb li.active {
+  color: var(--colorMuted);
+}
+.breadcrumb li a {
+  font-size: var(--fnt-12);
+  color: var(--colorTitre);
 }
 
 .footer-page {
