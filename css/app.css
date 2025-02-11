@@ -157,7 +157,7 @@ a {
 .dropdown-menu li.li-border {
   padding-top: 5px;
   margin-top: 5px;
-  border-top: 1px solid var(--borderColorHeaderModal);
+  border-top: 1px solid var(--colorBorder);
 }
 .dropdown-menu .dropdown-item {
   padding: 5px 7px;
@@ -763,7 +763,7 @@ hr {
   min-height: 450px;
 }
 .block-content-img-product img {
-  width: 50%;
+  width: 60%;
 }
 
 .breadcrumb li {
@@ -920,6 +920,8 @@ hr {
 .list-nav-filter {
   list-style: none;
   padding-left: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 .list-nav-filter li a {
   font-size: var(--fnt-14);

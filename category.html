@@ -114,8 +114,13 @@
                         <i class="fi fi-rr-bell"></i>
                         <span class="tooltip-indicator"> Notifications </span>
                       </a>
-                      <div class="dropdown">
-                        <a href="#" class="d-none d-lg-flex" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="dropdown d-none d-lg-block">
+                        <a
+                          href="#"
+                          class="d-flex"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
                           <div class="avatar">
                             <div class="icon-avatar">
                               <i class="fi fi-rr-user"></i>
@@ -124,17 +129,26 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                           <li>
-                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                            <a
+                              class="dropdown-item d-flex align-items-center gap-2"
+                              href="#"
+                            >
                               Nom (A-Z)
                             </a>
                           </li>
                           <li>
-                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                            <a
+                              class="dropdown-item d-flex align-items-center gap-2"
+                              href="#"
+                            >
                               Prix (Low to high)
                             </a>
                           </li>
                           <li class="li-border">
-                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                            <a
+                              class="dropdown-item d-flex align-items-center gap-2"
+                              href="#"
+                            >
                               Prix (High to low)
                             </a>
                           </li>
@@ -217,16 +231,25 @@
                           </div>
                           <ul class="block-link-category mt-2">
                             <li>
-                              <a href="#" class="active">Hommes <span class="ms-auto">(10)</span></a>
+                              <a href="#" class="active"
+                                >Hommes <span class="ms-auto">(10)</span></a
+                              >
                             </li>
                             <li>
-                              <a href="#">Femmes <span class="ms-auto">(5)</span></a>
+                              <a href="#"
+                                >Femmes <span class="ms-auto">(5)</span></a
+                              >
                             </li>
                             <li>
-                              <a href="#">Standards <span class="ms-auto">(20)</span></a>
+                              <a href="#"
+                                >Standards <span class="ms-auto">(20)</span></a
+                              >
                             </li>
                             <li>
-                              <a href="#">Adultes et enfants <span class="ms-auto">(10)</span></a>
+                              <a href="#"
+                                >Adultes et enfants
+                                <span class="ms-auto">(10)</span></a
+                              >
                             </li>
                           </ul>
                         </div>
@@ -396,7 +419,7 @@
                     <h2 class="title-block mb-lg-3 mb-2">Vêtements (Hommes)</h2>
                   </div>
                   <div class="row g-lg-3 mb-lg-4 mb-3">
-                    <div class="col-lg-8 col-10">
+                    <div class="col-lg-10 col-9">
                       <ul
                         class="list-nav-filter d-flex align-items-center mb-0"
                       >
@@ -432,19 +455,27 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="col-lg-4 col-2">
+                    <div class="col-lg-2 col-3">
                       <div
-                        class="d-flex align-items-center justify-content-end"
+                        class="d-flex align-items-center gap-2 justify-content-end"
                       >
+                        <button
+                          class="btn btn-default btn-sm btn-border d-inline-flex align-items-center gap-1"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#categorie"
+                        >
+                          <i class="fi fi-rr-apps"></i>
+                          <span class="d-none d-lg-flex"> Filtrer </span>
+                        </button>
                         <div class="dropdown">
-                          <div
+                          <button
                             class="btn btn-default btn-sm btn-border d-inline-flex align-items-center gap-1"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
                             <i class="fi fi-rr-filter"></i>
                             <span class="d-none d-lg-flex"> Filtrer </span>
-                          </div>
+                          </button>
                           <ul class="dropdown-menu dropdown-menu-end">
                             <li>
                               <a
@@ -1472,6 +1503,212 @@
       </div>
     </div>
     <!-- PANIER -->
+    <!-- SIDEBAR-CATEGORY -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="categorie"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Catégories</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fi fi-rr-cross"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column">
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/vet.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Vêtements</h5>
+            </div>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/chau.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Chaussures</h5>
+            </div>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/electro.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Électroniques</h5>
+            </div>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/elecM.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Électroménagers</h5>
+            </div>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/cost.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Cosmétiques</h5>
+            </div>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/deco.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Décoration intérieure</h5>
+            </div>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/chev.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Chevelure</h5>
+            </div>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SIDEBAR-CATEGORY -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>

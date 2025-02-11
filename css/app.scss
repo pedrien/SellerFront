@@ -171,7 +171,7 @@ a {
     &.li-border {
       padding-top: 5px;
       margin-top: 5px;
-      border-top: 1px solid var(--borderColorHeaderModal);
+      border-top: 1px solid var(--colorBorder);
     }
   }
 
@@ -848,7 +848,7 @@ hr {
   min-height: 450px;
 
   img {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -1018,6 +1018,8 @@ hr {
 .list-nav-filter {
   list-style: none;
   padding-left: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
 
   li {
     a {

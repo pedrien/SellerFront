@@ -21,7 +21,7 @@
           <nav class="navbar">
             <div class="content-nav w-100">
               <div class="container-fluid px-lg-3 px-xxl-4">
-                <div class="row g-lg-3 g-1 align-items-center">
+                <div class="row g-lg-3 g-1">
                   <div class="col-lg-3 col-xl-2 col-3">
                     <div
                       class="d-flex align-items-center gap-lg-3 gap-xxl-5 gap-3 h-100"
@@ -44,7 +44,9 @@
                     </div>
                   </div>
                   <div class="col-lg-6 col-xl-8 col-6">
-                    <div class="text-center info-location d-lg-none">
+                    <div
+                      class="text-center d-flex flex-column justify-content-center info-location d-lg-none h-100"
+                    >
                       <p class="mb-0">Livraison</p>
                       <h6 class="mb-0">
                         <i class="fi fi-rr-marker"></i> Kinshasa
@@ -84,7 +86,7 @@
                   </div>
                   <div class="col-lg-3 col-xl-2 col-3">
                     <div
-                      class="d-flex align-items-center justify-content-end gap-lg-4 gap-4 content-nav-right h-100"
+                      class="d-flex align-items-center justify-content-end gap-lg-4 gap-3 content-nav-right h-100"
                     >
                       <a
                         href="#panier"
@@ -106,21 +108,84 @@
                         <span class="tooltip-indicator"> Favoris </span>
                       </a>
                       <a
-                      href="favoris.html"
-                      class="link-icon d-flex align-items-center justify-content-center tooltip-hover"
-                      data-position-tooltip="bottom"
-                    >
-                    <div class="indice">2</div>
-                      <i class="fi fi-rr-bell"></i>
-                      <span class="tooltip-indicator"> Notifications </span>
-                    </a>
-                      <a href="login.html" class="d-none d-lg-flex">
-                        <div class="avatar">
-                          <div class="icon-avatar">
-                            <i class="fi fi-rr-user"></i>
-                          </div>
-                        </div>
+                        href="#"
+                        class="link-icon d-flex d-lg-none align-items-center justify-content-center tooltip-hover"
+                      >
+                        <i class="fi fi-rr-search"></i>
                       </a>
+                      <a
+                        href="#"
+                        class="link-icon d-flex d-lg-none align-items-center justify-content-center tooltip-hover"
+                        data-position-tooltip="bottom"
+                      >
+                        <div class="indice">2</div>
+                        <i class="fi fi-rr-bell"></i>
+                        <span class="tooltip-indicator"> Notifications </span>
+                      </a>
+                      <div class="dropdown d-none d-lg-block">
+                        <a
+                          href="#"
+                          class="d-flex"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <div class="avatar">
+                            <div class="icon-avatar">
+                              <i class="fi fi-rr-user"></i>
+                            </div>
+                          </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end lg">
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="avatar">
+                              <div class="icon-avatar">
+                                <i class="fi fi-rr-user"></i>
+                              </div>
+                            </div>
+                            <div class="info-user">
+                              <h6 class="mb-0 sm text">John Doe</h6>
+                              <p class="text xm muted mb-0">Super admin</p>
+                            </div>
+                          </div>
+                          <hr class="my-2" />
+                          <li>
+                            <a
+                              class="dropdown-item d-flex align-items-center gap-2"
+                              href="#"
+                            >
+                              <i class="fi fi-rr-user"></i>
+                              Mon profil
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item d-flex align-items-center gap-2"
+                              href="#"
+                            >
+                              <i class="fi fi-rr-shopping-cart"></i>
+                              Mes commandes
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item d-flex align-items-center gap-2"
+                              href="#"
+                            >
+                              <i class="fi fi-rr-bell"></i>
+                              Notifications
+                            </a>
+                          </li>
+                          <li class="li-border">
+                            <a
+                              class="dropdown-item d-flex align-items-center gap-2"
+                              href="#"
+                            >
+                              <i class="fi fi-rr-sign-out-alt"></i>
+                              Déconnexion
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -132,7 +197,7 @@
 
         <div class="content-page flex-grow-1">
           <!-- SEARCH -->
-          <div
+          <!-- <div
             class="content-search-lg d-flex d-lg-none mt-2 align-items-center container-fluid"
           >
             <div class="d-flex align-items-center position-relative w-100">
@@ -145,11 +210,11 @@
                 <i class="fi fi-rr-search"></i>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- SEARCH -->
 
           <!-- BANNER -->
-          <section class="banner mt-lg-3 mt-3">
+          <section class="banner mt-lg-3 mt-1">
             <div class="content-banner mx-auto d-flex flex-column">
               <div class="container-fluid px-lg-5 my-auto">
                 <div class="row g-lg-3 g-2 align-items-lg-center">
@@ -187,10 +252,16 @@
           <!-- GATEGORY -->
           <section class="slide-category pb-0">
             <div class="container-fluid px-lg-4">
-              <div class="d-flex align-items-center justify-content-lg-center text-center gap-2 mb-lg-3 mb-3">
+              <div
+                class="d-flex align-items-center justify-content-lg-center text-center gap-2 mb-lg-3 mb-3"
+              >
                 <h2 class="mb-0">Catégories</h2>
-                <a href="#categorie" data-bs-toggle="offcanvas"
-                aria-controls="offcanvasRight" class="link ms-auto d-lg-none">
+                <a
+                  href="#categorie"
+                  data-bs-toggle="offcanvas"
+                  aria-controls="offcanvasRight"
+                  class="link ms-auto d-lg-none"
+                >
                   Voir plus
                 </a>
               </div>
@@ -916,7 +987,13 @@
                 <div class="col-lg-7 col-xl-8">
                   <div class="d-flex align-items-center gap-2 mb-lg-3">
                     <h4 class="title-footer mb-0">Categories</h4>
-                    <a href="#" class="btn btn-black btn-sm">Tous voir</a>
+                    <a
+                      href="#categorie"
+                      data-bs-toggle="offcanvas"
+                      aria-controls="offcanvasRight"
+                      class="btn btn-black btn-sm"
+                      >Tous voir</a
+                    >
                   </div>
                   <div class="row g-lg-3 g-2">
                     <div class="col-lg-4">
@@ -1077,45 +1154,59 @@
         <!-- FOOTER -->
 
         <!-- TABBAR -->
-         <div class="tabBar position-fixed d-lg-none">
+        <div class="tabBar position-fixed d-lg-none">
           <div class="content-tab d-flex gap-4">
-            <a href="index.html" class="active d-flex link-tab flex-column flex-1 align-items-center text-center">
+            <a
+              href="index.html"
+              class="active d-flex link-tab flex-column flex-1 align-items-center text-center"
+            >
               <div class="icon">
                 <i class="fi fi-rr-home"></i>
               </div>
               <span>Accueil</span>
             </a>
-            <a href="index.html" class="d-flex link-tab flex-column flex-1 align-items-center text-center">
+            <a
+              href="index.html"
+              class="d-flex link-tab flex-column flex-1 align-items-center text-center"
+            >
               <div class="icon">
                 <i class="fi fi-rr-apps"></i>
               </div>
               <span>Categories</span>
             </a>
-            <a href="#panier" data-bs-toggle="offcanvas"
-            aria-controls="offcanvasRight" class="d-flex link-tab flex-column flex-1 align-items-center text-center">
+            <a
+              href="#panier"
+              data-bs-toggle="offcanvas"
+              aria-controls="offcanvasRight"
+              class="d-flex link-tab flex-column flex-1 align-items-center text-center"
+            >
               <div class="icon">
-                <div class="indice">
-                  2
-                </div>
+                <div class="indice">2</div>
                 <i class="fi fi-rr-shopping-cart"></i>
               </div>
               <span>Panier</span>
             </a>
-            <a href="favoris.html" class="d-flex  link-tab flex-column flex-1 align-items-center text-center">
+            <a
+              href="favoris.html"
+              class="d-flex link-tab flex-column flex-1 align-items-center text-center"
+            >
               <div class="icon">
                 <i class="fi fi-rr-heart"></i>
               </div>
               <span>Favoris</span>
             </a>
-            <a href="index.html" class="d-flex link-tab flex-column flex-1 align-items-center text-center">
+            <a
+              href="index.html"
+              class="d-flex link-tab flex-column flex-1 align-items-center text-center"
+            >
               <div class="icon">
                 <i class="fi fi-rr-user"></i>
               </div>
               <span>profil</span>
             </a>
           </div>
-         </div>
-         <!-- TABBAR -->
+        </div>
+        <!-- TABBAR -->
       </div>
     </div>
 
@@ -1349,209 +1440,210 @@
 
     <!-- SIDEBAR-CATEGORY -->
     <div
-    class="offcanvas offcanvas-end"
-    tabindex="-1"
-    id="categorie"
-    aria-labelledby="offcanvasRightLabel"
-  >
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasRightLabel">Catégories</h5>
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="offcanvas"
-        aria-label="Close"
-      >
-        <i class="fi fi-rr-cross"></i>
-      </button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="d-flex flex-column">
-        <div class="block-content-category">
-          <div class="d-flex align-items-center gap-2">
-            <div class="img-categoty">
-              <img
-                src="images/vet.jpg"
-                alt="img"
-                class="w-100 h-100 object-fit-cover"
-              />
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="categorie"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Catégories</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fi fi-rr-cross"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column">
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/vet.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Vêtements</h5>
             </div>
-            <h5 class="text sm mb-0">Vêtements</h5>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
           </div>
-          <ul class="block-link-category mt-2">
-            <li>
-              <a href="#" class="active">Hommes</a>
-            </li>
-            <li>
-              <a href="#">Femmes</a>
-            </li>
-            <li>
-              <a href="#">Standards</a>
-            </li>
-            <li>
-              <a href="#">Adultes et enfants</a>
-            </li>
-          </ul>
-        </div>
-        <div class="block-content-category">
-          <div class="d-flex align-items-center gap-2">
-            <div class="img-categoty">
-              <img
-                src="images/chau.jpg"
-                alt="img"
-                class="w-100 h-100 object-fit-cover"
-              />
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/chau.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Chaussures</h5>
             </div>
-            <h5 class="text sm mb-0">Chaussures</h5>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
           </div>
-          <ul class="block-link-category mt-2">
-            <li>
-              <a href="#" class="active">Hommes</a>
-            </li>
-            <li>
-              <a href="#">Femmes</a>
-            </li>
-            <li>
-              <a href="#">Standards</a>
-            </li>
-            <li>
-              <a href="#">Adultes et enfants</a>
-            </li>
-          </ul>
-        </div>
-        <div class="block-content-category">
-          <div class="d-flex align-items-center gap-2">
-            <div class="img-categoty">
-              <img
-                src="images/electro.jpg"
-                alt="img"
-                class="w-100 h-100 object-fit-cover"
-              />
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/electro.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Électroniques</h5>
             </div>
-            <h5 class="text sm mb-0">Électroniques</h5>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
           </div>
-          <ul class="block-link-category mt-2">
-            <li>
-              <a href="#" class="active">Hommes</a>
-            </li>
-            <li>
-              <a href="#">Femmes</a>
-            </li>
-            <li>
-              <a href="#">Standards</a>
-            </li>
-            <li>
-              <a href="#">Adultes et enfants</a>
-            </li>
-          </ul>
-        </div>
-        <div class="block-content-category">
-          <div class="d-flex align-items-center gap-2">
-            <div class="img-categoty">
-              <img
-                src="images/elecM.jpg"
-                alt="img"
-                class="w-100 h-100 object-fit-cover"
-              />
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/elecM.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Électroménagers</h5>
             </div>
-            <h5 class="text sm mb-0">Électroménagers</h5>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
           </div>
-          <ul class="block-link-category mt-2">
-            <li>
-              <a href="#" class="active">Hommes</a>
-            </li>
-            <li>
-              <a href="#">Femmes</a>
-            </li>
-            <li>
-              <a href="#">Standards</a>
-            </li>
-            <li>
-              <a href="#">Adultes et enfants</a>
-            </li>
-          </ul>
-        </div>
-        <div class="block-content-category">
-          <div class="d-flex align-items-center gap-2">
-            <div class="img-categoty">
-              <img
-                src="images/cost.jpg"
-                alt="img"
-                class="w-100 h-100 object-fit-cover"
-              />
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/cost.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Cosmétiques</h5>
             </div>
-            <h5 class="text sm mb-0">Cosmétiques</h5>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
           </div>
-          <ul class="block-link-category mt-2">
-            <li>
-              <a href="#" class="active">Hommes</a>
-            </li>
-            <li>
-              <a href="#">Femmes</a>
-            </li>
-            <li>
-              <a href="#">Standards</a>
-            </li>
-            <li>
-              <a href="#">Adultes et enfants</a>
-            </li>
-          </ul>
-        </div>
-        <div class="block-content-category">
-          <div class="d-flex align-items-center gap-2">
-            <div class="img-categoty">
-              <img
-                src="images/deco.jpg"
-                alt="img"
-                class="w-100 h-100 object-fit-cover"
-              />
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/deco.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Décoration intérieure</h5>
             </div>
-            <h5 class="text sm mb-0">Décoration intérieure</h5>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
           </div>
-          <ul class="block-link-category mt-2">
-            <li>
-              <a href="#" class="active">Hommes</a>
-            </li>
-            <li>
-              <a href="#">Femmes</a>
-            </li>
-            <li>
-              <a href="#">Standards</a>
-            </li>
-            <li>
-              <a href="#">Adultes et enfants</a>
-            </li>
-          </ul>
-        </div>
-        <div class="block-content-category">
-          <div class="d-flex align-items-center gap-2">
-            <div class="img-categoty">
-              <img
-                src="images/chev.jpg"
-                alt="img"
-                class="w-100 h-100 object-fit-cover"
-              />
+          <div class="block-content-category">
+            <div class="d-flex align-items-center gap-2">
+              <div class="img-categoty">
+                <img
+                  src="images/chev.jpg"
+                  alt="img"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <h5 class="text sm mb-0">Chevelure</h5>
             </div>
-            <h5 class="text sm mb-0">Chevelure</h5>
+            <ul class="block-link-category mt-2">
+              <li>
+                <a href="#" class="active">Hommes</a>
+              </li>
+              <li>
+                <a href="#">Femmes</a>
+              </li>
+              <li>
+                <a href="#">Standards</a>
+              </li>
+              <li>
+                <a href="#">Adultes et enfants</a>
+              </li>
+            </ul>
           </div>
-          <ul class="block-link-category mt-2">
-            <li>
-              <a href="#" class="active">Hommes</a>
-            </li>
-            <li>
-              <a href="#">Femmes</a>
-            </li>
-            <li>
-              <a href="#">Standards</a>
-            </li>
-            <li>
-              <a href="#">Adultes et enfants</a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
-  </div>
+    <!-- SIDEBAR-CATEGORY -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
