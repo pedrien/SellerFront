@@ -576,6 +576,9 @@ hr {
   font-size: var(--fnt-14);
   color: var(--colorTitre);
 }
+.navbar .content-nav-center .content-search {
+  position: relative;
+}
 .navbar .content-nav-center .content-search .form-bg {
   background: var(--bgFond);
   border: none;
@@ -584,13 +587,17 @@ hr {
   color: var(--colorTitre);
   height: 42px;
   padding-left: 16px;
+  position: relative;
+  z-index: 1;
 }
 .navbar .content-nav-center .content-search .form-bg:focus {
   border: none;
   box-shadow: none;
 }
-.navbar .content-nav-center .content-search .form-bg:focus + .icon-search {
-  color: var(--primaryColor);
+.navbar .content-nav-center .content-search .form-bg:focus + .block-show-result-search {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
 }
 .navbar .content-nav-center .content-search .icon-search {
   position: absolute;
@@ -598,6 +605,71 @@ hr {
   font-size: var(--fnt-16);
   right: 20px;
   transition: var(--transition-3);
+  z-index: 1;
+}
+.navbar .content-nav-center .content-search .block-show-result-search {
+  position: absolute;
+  width: 105%;
+  background: var(--whiteColor);
+  box-shadow: var(--boxShadowDropdown);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: var(--borderRadius-12);
+  top: -10px;
+  transition: 0.1s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding-top: 60px;
+}
+.navbar .content-nav-center .content-search .block-show-result-search p {
+  font-size: var(--fnt-14);
+  font-weight: normal;
+  color: var(--colorMuted);
+}
+.navbar .content-nav-center .content-search .block-show-result-search .list-result {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0 24px;
+  padding-bottom: 14px;
+  min-height: 120px;
+  max-height: 170px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.navbar .content-nav-center .content-search .block-show-result-search .list-result li a {
+  color: var(--colorMuted);
+  font-size: var(--fnt-14);
+  display: inline-flex;
+  padding: 3px 0;
+}
+.navbar .content-nav-center .content-search .block-show-result-search .list-result li a:hover {
+  color: var(--colorTitre);
+}
+.navbar .content-nav-center .content-search .block-show-result-search .block-search-recent {
+  padding: 0 24px;
+}
+.navbar .content-nav-center .content-search .block-show-result-search .block-search-recent .item-block {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--borderRadius-24);
+  background: var(--bgFond);
+  padding-right: 6px;
+  gap: 3px;
+}
+.navbar .content-nav-center .content-search .block-show-result-search .block-search-recent .item-block a {
+  display: inline-block;
+  max-width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 3px 6px;
+  padding-right: 0;
+  font-size: var(--fnt-11);
+  color: var(--colorTitre);
+}
+.navbar .content-nav-center .content-search .block-show-result-search .block-search-recent .item-block .btn {
+  padding: 0;
+  font-size: 6px;
 }
 .navbar .content-nav-right {
   padding: 10px 0;

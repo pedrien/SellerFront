@@ -651,6 +651,8 @@ hr {
       color: var(--colorTitre);
     }
     .content-search {
+      position: relative;
+
       .form-bg {
         background: var(--bgFond);
         border: none;
@@ -659,11 +661,18 @@ hr {
         color: var(--colorTitre);
         height: 42px;
         padding-left: 16px;
+        position: relative;
+        z-index: 1;
         &:focus {
           border: none;
           box-shadow: none;
-          + .icon-search {
-            color: var(--primaryColor);
+          // + .icon-search {
+          //   color: var(--primaryColor);
+          // }
+          + .block-show-result-search {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: visible;
           }
         }
       }
@@ -673,6 +682,77 @@ hr {
         font-size: var(--fnt-16);
         right: 20px;
         transition: var(--transition-3);
+        z-index: 1;
+      }
+      .block-show-result-search {
+        position: absolute;
+        width: 105%;
+        // min-height: 220px;
+        // max-height: 250px;
+        background: var(--whiteColor);
+        box-shadow: var(--boxShadowDropdown);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: var(--borderRadius-12);
+        top: -10px;
+        transition: .1s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        padding-top: 60px;
+        p {
+          font-size: var(--fnt-14);
+          font-weight: normal;
+          color: var(--colorMuted);
+        }
+
+        .list-result {
+          list-style: none;
+          margin-bottom: 0;
+          padding: 0 24px;
+          padding-bottom: 14px;
+          min-height: 120px;
+          max-height: 170px;
+          overflow-y: auto;
+          scrollbar-width: thin;
+          li {
+            a {
+              color: var(--colorMuted);
+              font-size: var(--fnt-14);
+              display: inline-flex;
+              padding: 3px 0;
+              &:hover {
+                color: var(--colorTitre);
+              }
+            }
+          }
+        }
+        .block-search-recent {
+          padding: 0 24px;
+          .item-block {
+            display: inline-flex;
+            align-items: center;
+            border-radius: var(--borderRadius-24);
+            background: var(--bgFond);
+            padding-right: 6px;
+            gap: 3px;
+            a {
+              display: inline-block;
+              max-width: 50px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              padding: 3px 6px;
+              padding-right: 0;
+              font-size: var(--fnt-11);
+              color: var(--colorTitre);
+            }
+            .btn {
+              padding: 0;
+              font-size: 6px;
+            }
+          }
+        }
+
       }
     }
     
