@@ -19,6 +19,12 @@
   --bgBadgeSuccess: #c1eae2;
   --bgBadgeDanger: #f7c0c0;
   --bgBadgeWarning: #f7e2c8;
+  --bgBadgeGreen: #e6f7f0;
+  --colorBadgeGreen: #40c18b;
+  --bgBadgeRed: #fbeaea;
+  --bgBadgePurple: #eee5f7;
+  --bgBadgeOrange: #f9f0e8;
+  --colorBadgeRed: var(--redColor);
 
   // Variables for borderRadius //
 
@@ -111,6 +117,11 @@ body {
     color: var(--whiteColor);
     border-color: var(--colorTitre);
   }
+  &.btn-light {
+    background: var(--bgFond);
+    color: var(--colorTitre);
+    border: none;
+  }
 }
 a {
   text-decoration: none;
@@ -192,6 +203,128 @@ a {
   }
 }
 
+
+.card-table {
+  border-color: var(--colorBorder);
+  border-radius: var(--borderRadius-24);
+  padding: 18px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.0196078431);
+}
+
+.table {
+  tr {
+    border: none !important;
+    vertical-align: middle;
+  }
+
+  th {
+    font-size: 14px;
+    color: var(--colorTitre);
+    padding: 12px 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    border-bottom: 1px dashed var(--colorBorderTr) !important;
+    background: var(--bgTh);
+
+   
+  }
+
+  td {
+    border-bottom: 1px dashed var(--colorBorderTr);
+    font-size: 14px;
+    color: var(--colorMuted);
+    padding: 12px 14px;
+    white-space: nowrap;
+    background: transparent;
+  }
+
+  .btn-table {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 8px;
+    font-size: 12px;
+    color: var(--colorMuted);
+    background: var(--bgFond);
+
+    &:hover {
+      color: var(--colorTitre);
+    }
+  }
+
+  .block-info-user-table {
+    .avatar-user-table {
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+
+      .name-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primaryColor);
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        background: var(--variantPrimaryColor);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: var(--borderRadius-r-50);
+        object-fit: cover;
+      }
+    }
+
+    .content-info-user {
+      h6 {
+        font-size: var(--fnt-14);
+        color: var(--colorTitle);
+      }
+
+      p {
+        font-size: var(--fnt-12);
+      }
+    }
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  font-weight: 500;
+
+  &.badge-success {
+    background: var(--bgBadgeGreen);
+    color: var(--colorBadgeGreen);
+  }
+
+  &.badge-danger {
+    color: var(--colorBadgeRed);
+    background: var(--bgBadgeRed);
+  }
+
+  &.badge-warning {
+    color: var(--orangeColor);
+    background: var(--bgBadgeOrange);
+  }
+
+  &.badge-purple {
+    color: var(--purpleColor);
+    background: var(--bgBadgePurple);
+  }
+}
+
+
 .border-end {
   border-color: var(--colorBorder)!important;
 }
@@ -217,7 +350,14 @@ hr {
 
   &.sm {
     padding: 2px 8px;
+    font-size: var(--fnt-10);
   }
+}
+
+.block-dashed-detail-pay {
+  padding: 14px;
+  border: 2px dashed var(--colorBorder);
+  border-radius: var(--borderRadius-24);
 }
 
 .tooltip-hover {
@@ -431,6 +571,37 @@ hr {
           border-color: var(--colorTitre);
         }
       }
+    }
+  }
+}
+
+.block-search-in-table {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .icon {
+    position: absolute;
+    color: var(--colorTitre);
+    left: 14px;
+    font-size: var(--fnt-14);
+    transition: var(--transition-3);
+    display: flex;
+    align-items: center;
+  }
+  .form-control {
+    padding-left: 38px;
+    font-size: var(--fnt-14);
+    color: var(--colorTitre);
+    border-radius: var(--borderRadius-8);
+    border-color: var(--colorBorder);
+    box-shadow: none;
+    &::placeholder {
+      color: var(--colorMuted);
+      opacity: .6;
+    }
+    
+    &:focus {
+      border-color: var(--colorTitre);
     }
   }
 }
@@ -1486,7 +1657,7 @@ hr {
   }
 
   .title-block {
-    font-size: var(--fnt-16);
+    font-size: var(--fnt-18);
   }
 
   .link {
