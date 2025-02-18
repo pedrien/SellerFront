@@ -209,15 +209,6 @@
                           <li>
                             <a
                               class="dropdown-item d-flex align-items-center gap-2"
-                              href="dashboardClient.html"
-                            >
-                              <i class="fi fi-rr-apps"></i>
-                             Dashboard
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item d-flex align-items-center gap-2"
                               href="#"
                             >
                               <i class="fi fi-rr-user"></i>
@@ -263,955 +254,407 @@
         <!-- NAVBAR -->
 
         <div class="content-page flex-grow-1">
-          <!-- SEARCH -->
-          <!-- <div
-            class="content-search-lg d-flex d-lg-none mt-2 align-items-center container-fluid"
-          >
-            <div class="d-flex align-items-center position-relative w-100">
-              <input
-                type="text"
-                class="form-control form-bg"
-                placeholder="Trouvez un article..."
-              />
-              <div class="icon-search">
-                <i class="fi fi-rr-search"></i>
+          <div class="content-dashboard pt-lg-3 pt-2">
+           <div class="container">
+            <div class="row g-lg-4 g-2">
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="card-link-dash card">
+                  <div class="header">
+                    <div class="d-flex align-items-center gap-2">
+                      <a href="#" class="back tooltip-hover text sm" data-position-tooltip="left">
+                        <i class="fi fi-rr-arrow-left"></i>
+                        <span class="tooltip-indicator"> Retour </span>
+                      </a>
+                      <h4 class="text mb-0">Menu</h4>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <ul class="list-link-dash ps-0 mb-0">
+                      <li>
+                        <a href="dashboardClient.html" class="d-inline-flex align-items-center gap-2 active">
+                          <i class="fi fi-rr-apps"></i>
+                          <span>Dashboard</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mescommandes.html" class="d-inline-flex align-items-center gap-2">
+                          <i class="fi fi-rr-shopping-cart"></i>
+                          <span>Mes commandes</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mesarticlesachetes.html" class="d-inline-flex align-items-center gap-2">
+                          <i class="fi fi-rr-box"></i>
+                          <span>Mes articles achetés</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-inline-flex align-items-center gap-2">
+                          <i class="fi fi-rr-exchange"></i>
+                          <span>Mes transactions</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-inline-flex align-items-center gap-2">
+                          <i class="fi fi-rr-user"></i>
+                          <span>Mon profil</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div> -->
-          <!-- SEARCH -->
-
-          <!-- BANNER -->
-          <section class="banner mt-lg-3 mt-1">
-            <div class="content-banner mx-auto d-flex flex-column">
-              <div class="container-fluid px-lg-5 my-auto">
-                <div class="row g-lg-3 g-2 align-items-lg-center">
-                  <div class="col-lg-6 col-8">
-                    <div class="content-banner-left">
-                      <div class="content-banner-left-center">
-                        <h1 class="title-banner mb-lg-2 mt-2 mt-lg-0">
-                          Chackeckak <span>Boutique</span> <br />
-                          en ligne
-                        </h1>
-                        <p class="desc-banner mb-lg-4">
-                          Découvrez nos offres exclusives et profitez des
-                          meilleures affaires du moment !
-                        </p>
-                        <div class="content-banner-left-bottom">
-                          <a href="category.html" class="btn btn-default btn-primary"
-                            >Shop Now</a
-                          >
+              <div class="col-lg-9">
+                <div class="d-flex align-items-center mb-lg-3 mb-2 gap-1">
+                  <div>
+                    <h1 class="title-block mb-0">
+                      Dashboard
+                    </h1>
+                    <p class="text muted xm mb-0">Le 18 fév, 2025</p>
+                  </div>
+                  <div class="dropdown ms-auto d-lg-none">
+                    <button class="btn btn-default btn-border btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fi fi-rr-menu-burger"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" style="">
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center gap-2 active" href="dashboardClient.html">
+                          <i class="fi fi-rr-apps"></i>
+                          Dashboard
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="mescommandes.html">
+                          <i class="fi fi-rr-shopping-cart"></i>
+                          Mes commandes
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="mesarticlesachetes.html">
+                          <i class="fi fi-rr-box"></i>
+                          Mes articles achetés
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                          <i class="fi fi-rr-exchange"></i>
+                          Mes transactions
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                          <i class="fi fi-rr-user"></i>
+                          Mon profil
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="category.html" class="btn btn-default tooltip-hover btn-sm btn-primary ms-lg-auto" data-position-tooltip="right">
+                    <i class="fi fi-rr-plus"></i>
+                    <span class="tooltip-indicator"> Nouvelle commande </span>
+                  </a>
+                 </div>
+                <div class="row g-lg-3 g-2">
+                  <div class="col-lg-4">
+                    <div class="card card-table green h-100">
+                      <div class="d-flex align-items-center mb-3">
+                        <i class="fi fi-rr-shopping-cart text muted md"></i>
+                        <h5 class="text mb-0 ms-auto">4</h5>
+                      </div>
+                      <p class="text sm mb-0">Commandes</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card card-table purple h-100">
+                      <div class="d-flex align-items-center mb-3">
+                        <i class="fi fi-rr-exchange text muted md"></i>
+                        <h5 class="text mb-0 ms-auto">4</h5>
+                      </div>
+                      <p class="text sm mb-0">Transactions effectuées</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card card-table orange h-100">
+                      <div class="d-flex align-items-center mb-3">
+                        <i class="fi fi-rr-box text muted md"></i>
+                        <h5 class="text mb-0 ms-auto">4</h5>
+                      </div>
+                      <p class="text sm mb-0">Articles achétés</p>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card card-table">
+                      <div class="row g-lg-3 g-2 align-items-center">
+                        <div class="col-lg-6">
+                          <h4 class="text mb-0">Commandes recentes</h4>
                         </div>
+                        <div class="col-lg-6">
+                          <div class="d-flex align-items-center gap-2 justify-content-end">
+                            <div class="block-search-in-table">
+                              <input type="text" class="form-control" placeholder="Recherche">
+                              <div class="icon">
+                                <i class="fi fi-rr-search"></i>
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-default btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filtre
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    En cours
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Livré
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Annulé
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mb-0">
+                      <div class="table-responsive">
+                        <table class="table mb-0">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Code commande</th>
+                              <th>Nbr articles</th>
+                              <th>Montant</th>
+                              <th>Statut</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>#N0913HDL</td>
+                              <td>3</td>
+                              <td>400$</td>
+                              <td>
+                                <div class="badge badge-warning">
+                                  En cours
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <button class="btn btn-table tooltip-hover" data-position-tooltip="top" data-bs-toggle="offcanvas" data-bs-target="#commande-01">
+                                    <i class="fi fi-rr-eye"></i>
+                                    <span class="tooltip-indicator sm"> Voir </span>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>#N0913EYUAl</td>
+                              <td>4</td>
+                              <td>400$</td>
+                              <td>
+                                <div class="badge badge-success">
+                                  Livré
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <button class="btn btn-table tooltip-hover" data-position-tooltip="top" data-bs-toggle="offcanvas" data-bs-target="#commande-01">
+                                    <i class="fi fi-rr-eye"></i>
+                                    <span class="tooltip-indicator sm"> Voir </span>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>#N0913EYUAl</td>
+                              <td>6</td>
+                              <td>800$</td>
+                              <td>
+                                <div class="badge badge-danger">
+                                  Annulé
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <button class="btn btn-table tooltip-hover" data-position-tooltip="top" data-bs-toggle="offcanvas" data-bs-target="#commande-01">
+                                    <i class="fi fi-rr-eye"></i>
+                                    <span class="tooltip-indicator sm"> Voir </span>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-4">
-                    <div class="content-banner-right">
-                      <div class="circle"></div>
-                      <img src="images/man.png" alt="banner" />
+                  <div class="col-12">
+                    <div class="card card-table">
+                      <div class="row g-lg-3 g-2 align-items-center">
+                        <div class="col-lg-6">
+                          <h4 class="text mb-0">Articles recents</h4>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="d-flex align-items-center gap-2 justify-content-end">
+                            <div class="block-search-in-table">
+                              <input type="text" class="form-control" placeholder="Recherche">
+                              <div class="icon">
+                                <i class="fi fi-rr-search"></i>
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-default btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filtre
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    En cours
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Livré
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Annulé
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mb-0">
+                      <div class="table-responsive">
+                        <table class="table mb-0">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Nom article</th>
+                              <th>Prix unitaire</th>
+                              <th>Nbr acheté</th>
+                              <th>Prix total</th>
+                              <th>Date d'achat</th>
+                              <th>Statut</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                               <div class="d-flex align-items-center gap-2">
+                                 <div class="block-img-in-table">
+                                   <img src="images/veste1.png" alt="veste" class="object-fit-contain">
+                                 </div>
+                                 <div class="info">
+                                   <h6 class="text sm mb-0">Veste Gucci</h6>
+                                   <p class="mb-0 text xm muted">XXL</p>
+                                 </div>
+                               </div>
+                              </td>
+                              <td>400$</td>
+                              <td>3</td>
+                              <td>1200$</td>
+                              <td>18 fév, 2025</td>
+                              <td>
+                                <div class="badge badge-warning">
+                                  En cours
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <button class="btn btn-table tooltip-hover" data-position-tooltip="top" data-bs-toggle="offcanvas" data-bs-target="#commande-01">
+                                    <i class="fi fi-rr-eye"></i>
+                                    <span class="tooltip-indicator sm"> Voir </span>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>
+                               <div class="d-flex align-items-center gap-2">
+                                 <div class="block-img-in-table">
+                                   <img src="images/chemise.png" alt="veste" class="object-fit-contain">
+                                 </div>
+                                 <div class="info">
+                                   <h6 class="text sm mb-0">Chemise adulte</h6>
+                                   <p class="mb-0 text xm muted">XXL</p>
+                                 </div>
+                               </div>
+                              </td>
+                              <td>400$</td>
+                              <td>3</td>
+                              <td>1200$</td>
+                              <td>18 fév, 2025</td>
+                              <td>
+                                <div class="badge badge-success">
+                                  Livré
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <button class="btn btn-table tooltip-hover" data-position-tooltip="top" data-bs-toggle="offcanvas" data-bs-target="#commande-01">
+                                    <i class="fi fi-rr-eye"></i>
+                                    <span class="tooltip-indicator sm"> Voir </span>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>
+                               <div class="d-flex align-items-center gap-2">
+                                 <div class="block-img-in-table">
+                                   <img src="images/kaki.png" alt="veste" class="object-fit-contain">
+                                 </div>
+                                 <div class="info">
+                                   <h6 class="text sm mb-0">Kaki adulte</h6>
+                                   <p class="mb-0 text xm muted">XXL</p>
+                                 </div>
+                               </div>
+                              </td>
+                              <td>400$</td>
+                              <td>3</td>
+                              <td>1200$</td>
+                              <td>18 fév, 2025</td>
+                              <td>
+                                <div class="badge badge-danger">
+                                  Annulé
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <button class="btn btn-table tooltip-hover" data-position-tooltip="top" data-bs-toggle="offcanvas" data-bs-target="#commande-01">
+                                    <i class="fi fi-rr-eye"></i>
+                                    <span class="tooltip-indicator sm"> Voir </span>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- BANNER -->
-
-          <!-- GATEGORY -->
-          <section class="slide-category pb-0">
-            <div class="container-fluid px-lg-4">
-              <div
-                class="d-flex align-items-center justify-content-lg-center text-center gap-2 mb-lg-3 mb-3"
-              >
-                <h2 class="mb-0">Catégories</h2>
-                <a
-                  href="#categorie"
-                  data-bs-toggle="offcanvas"
-                  aria-controls="offcanvasRight"
-                  class="link ms-auto d-lg-none"
-                >
-                  Voir plus
-                </a>
-              </div>
-            </div>
-            <div
-              class="content-category d-flex gap-lg-2 flex-lg-wrap flex-nowrap justify-content-lg-center justify-content-start gap-1 w-100 px-lg-3 px-xxl-4 px-2"
-            >
-              <div class="idem-category d-flex align-items-center gap-2">
-                <div class="img-category mx-auto">
-                  <img
-                    src="images/vet1.jpg"
-                    alt="vetement"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
-                <div class="title-category text-center">
-                  <h3 class="mb-0">Vêtements</h3>
-                </div>
-                <a href="category.html" class="stretched-link"></a>
-              </div>
-              <div class="idem-category d-flex align-items-center gap-2">
-                <div class="img-category mx-auto">
-                  <img
-                    src="images/chau.jpg"
-                    alt="chaussure"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
-                <div class="title-category text-center">
-                  <h3 class="mb-0">Chaussures</h3>
-                </div>
-                <a href="category.html" class="stretched-link"></a>
-              </div>
-              <div class="idem-category d-flex align-items-center gap-2">
-                <div class="img-category mx-auto">
-                  <img
-                    src="images/electro.jpg"
-                    alt="electronique"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
-                <div class="title-category text-center">
-                  <h3 class="mb-0">Électronique</h3>
-                </div>
-                <a href="category.html" class="stretched-link"></a>
-              </div>
-              <div class="idem-category d-flex align-items-center gap-2">
-                <div class="img-category mx-auto">
-                  <img
-                    src="images/elecM.jpg"
-                    alt="electromenager"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
-                <div class="title-category text-center">
-                  <h3 class="mb-0">Électroménager</h3>
-                </div>
-                <a href="category.html" class="stretched-link"></a>
-              </div>
-              <div class="idem-category d-flex align-items-center gap-2">
-                <div class="img-category mx-auto">
-                  <img
-                    src="images/cost.jpg"
-                    alt="costmetique"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
-                <div class="title-category text-center">
-                  <h3 class="mb-0">Cosmétiques</h3>
-                </div>
-                <a href="category.html" class="stretched-link"></a>
-              </div>
-              <div class="idem-category d-flex align-items-center gap-2">
-                <div class="img-category mx-auto">
-                  <img
-                    src="images/deco.jpg"
-                    alt="food"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
-                <div class="title-category text-center">
-                  <h3 class="mb-0">Décoration intérieure</h3>
-                </div>
-                <a href="category.html" class="stretched-link"></a>
-              </div>
-              <div class="idem-category d-flex align-items-center gap-2">
-                <div class="img-category mx-auto">
-                  <img
-                    src="images/chev.jpg"
-                    alt="Chevelure"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
-                <div class="title-category text-center">
-                  <h3 class="mb-0">Chevelure</h3>
-                </div>
-                <a href="category.html" class="stretched-link"></a>
-              </div>
-            </div>
-          </section>
-          <!-- GATEGORY -->
-
-          <!-- PRODUCTS -->
-          <section class="block-product-slide">
-            <div class="container-fluid px-lg-3 px-xxl-4 px-2">
-              <div class="d-flex align-items-center gap-2 mb-lg-3 mb-3">
-                <h2 class="title-block mb-0">Nouvel arrivage</h2>
-                <a href="#" class="link ms-auto">Voir plus</a>
-              </div>
-            </div>
-            <div class="position-relative block-scroll-item">
-              <div
-                class="btn btn btn-scroll-block d-none d-lg-flex btn-scroll-block-left"
-              >
-                <i class="fi fi-rr-angle-left"></i>
-              </div>
-              <div
-                class="btn btn btn-scroll-block d-none d-lg-flex btn-scroll-block-right"
-              >
-                <i class="fi fi-rr-angle-right"></i>
-              </div>
-              <div
-                class="content-product px-xxl-4 px-2 py-lg-2 d-flex gap-lg-3 gap-2"
-              >
-                <div class="item-product d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="badge-product new">
-                      New
-                    </div>
-                    <a href="#" class="like ms-auto">
-                      <i class="fi fi-rr-heart"></i>
-                    </a>
-                  </div>
-                  <a href="detail-product.html">
-                    <div class="content-img mb-3">
-                      <img
-                        src="images/kaki.png"
-                        alt="img"
-                        class="w-100 h-100 object-fit-contain"
-                      />
-                    </div>
-                  </a>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Kaki pour adulte</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="badge-product new">
-                      New
-                    </div>
-                    <a href="#" class="like ms-auto">
-                      <i class="fi fi-rr-heart"></i>
-                    </a>
-                  </div>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/chemise.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Chemise jeans adulte</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="badge-product new">
-                      New
-                    </div>
-                    <a href="#" class="like ms-auto">
-                      <i class="fi fi-rr-heart"></i>
-                    </a>
-                  </div>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste Gucci</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="badge-product new">
-                      New
-                    </div>
-                    <a href="#" class="like ms-auto">
-                      <i class="fi fi-rr-heart"></i>
-                    </a>
-                  </div>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste1.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste versace</h5>
-                    <p class="mb-0">XXL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="badge-product new">
-                      New
-                    </div>
-                    <a href="#" class="like ms-auto">
-                      <i class="fi fi-rr-heart"></i>
-                    </a>
-                  </div>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste2.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste pour cérémonie</h5>
-                    <p class="mb-0">XXL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="badge-product new">
-                      New
-                    </div>
-                    <a href="#" class="like ms-auto">
-                      <i class="fi fi-rr-heart"></i>
-                    </a>
-                  </div>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste3.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste doré</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="badge-product new">
-                      New
-                    </div>
-                    <a href="#" class="like ms-auto">
-                      <i class="fi fi-rr-heart"></i>
-                    </a>
-                  </div>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/chemise1.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Chemise blache</h5>
-                    <p class="mb-0">M</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="block-product-slide pt-0">
-            <div class="container-fluid px-lg-3 px-xxl-4 px-2">
-              <div class="d-flex align-items-center gap-2 mb-lg-3 mb-3">
-                <h2 class="title-block mb-0">Rolling paper & tobacco</h2>
-                <a href="#" class="link ms-auto">Voir plus</a>
-              </div>
-            </div>
-            <div class="position-relative block-scroll-item">
-              <div
-                class="btn btn btn-scroll-block d-none d-lg-flex btn-scroll-block-left"
-              >
-                <i class="fi fi-rr-angle-left"></i>
-              </div>
-              <div
-                class="btn btn btn-scroll-block d-none d-lg-flex btn-scroll-block-right"
-              >
-                <i class="fi fi-rr-angle-right"></i>
-              </div>
-              <div
-                class="content-product px-xxl-4 px-2 py-lg-2 d-flex gap-lg-3 gap-2"
-              >
-                <div class="item-product d-flex flex-column">
-                  <a href="#" class="like">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/kaki.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Kaki pour adulte</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <a href="#" class="like">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/chemise.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Chemise jeans adulte</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <a href="#" class="like">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste Gucci</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <a href="#" class="like">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste1.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste versace</h5>
-                    <p class="mb-0">XXL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <a href="#" class="like">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste2.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste pour cérémonie</h5>
-                    <p class="mb-0">XXL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <a href="#" class="like">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/veste3.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Veste doré</h5>
-                    <p class="mb-0">XL</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="item-product d-flex flex-column">
-                  <a href="#" class="like">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                  <div class="content-img mb-3">
-                    <img
-                      src="images/chemise1.png"
-                      alt="img"
-                      class="w-100 h-100 object-fit-contain"
-                    />
-                  </div>
-                  <div class="name-article mb-lg-4 mb-3">
-                    <h5 class="mb-1">Chemise blache</h5>
-                    <p class="mb-0">M</p>
-                    <div
-                      class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                    >
-                      
-                      <p class="mb-0 text xm">Pikes-MAM</p>
-                    </div>
-                  </div>
-                  <div
-                    class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                  >
-                    <h6 class="price mb-0">30$</h6>
-                    <button class="btn btn-cart ms-auto">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="block-product-slide pt-0">
-            <div class="container-fluid px-lg-3 px-xxl-4 px-2">
-              <div class="d-flex align-items-center gap-2 mb-lg-3 mb-3">
-                <h2 class="title-block mb-0">En solde</h2>
-                <a href="#" class="link ms-auto">Voir plus</a>
-              </div>
-            </div>
-            <div class="position-relative block-scroll-item">
-              <div
-                class="btn btn btn-scroll-block d-none d-lg-flex btn-scroll-block-left"
-              >
-                <i class="fi fi-rr-angle-left"></i>
-              </div>
-              <div
-                class="btn btn btn-scroll-block d-none d-lg-flex btn-scroll-block-right"
-              >
-                <i class="fi fi-rr-angle-right"></i>
-              </div>
-              <div
-              class="content-product px-xxl-4 px-2 py-lg-2 d-flex gap-lg-3 gap-2"
-            >
-              <div class="item-product d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <div class="badge-product solde">
-                    Solde
-                  </div>
-                  <a href="#" class="like ms-auto">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                </div>
-                <div class="content-img mb-3">
-                  <img
-                    src="images/kaki.png"
-                    alt="img"
-                    class="w-100 h-100 object-fit-contain"
-                  />
-                </div>
-                <div class="name-article mb-lg-4 mb-3">
-                  <h5 class="mb-1">Kaki pour adulte</h5>
-                  <p class="mb-0">XL</p>
-                  <div
-                    class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                  >
-                    
-                    <p class="mb-0 text xm">Pikes-MAM</p>
-                  </div>
-                </div>
-                <div
-                  class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                >
-                  <div>
-                    <div class="price-striker text xm muted mb-1">
-                      40$
-                    </div>
-                    <h6 class="price mb-0">30$</h6>
-                  </div>
-                  <button class="btn btn-cart ms-auto">
-                    <i class="fi fi-rr-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="item-product d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <div class="badge-product solde">
-                    Solde
-                  </div>
-                  <a href="#" class="like ms-auto">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                </div>
-                <div class="content-img mb-3">
-                  <img
-                    src="images/chemise.png"
-                    alt="img"
-                    class="w-100 h-100 object-fit-contain"
-                  />
-                </div>
-                <div class="name-article mb-lg-4 mb-3">
-                  <h5 class="mb-1">Chemise jeans adulte</h5>
-                  <p class="mb-0">XL</p>
-                  <div
-                    class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                  >
-                    
-                    <p class="mb-0 text xm">Pikes-MAM</p>
-                  </div>
-                </div>
-                <div
-                  class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                >
-                  <h6 class="price mb-0">30$</h6>
-                  <button class="btn btn-cart ms-auto">
-                    <i class="fi fi-rr-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="item-product d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <div class="badge-product solde">
-                    Solde
-                  </div>
-                  <a href="#" class="like ms-auto">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                </div>
-                <div class="content-img mb-3">
-                  <img
-                    src="images/veste.png"
-                    alt="img"
-                    class="w-100 h-100 object-fit-contain"
-                  />
-                </div>
-                <div class="name-article mb-lg-4 mb-3">
-                  <h5 class="mb-1">Veste Gucci</h5>
-                  <p class="mb-0">XL</p>
-                  <div
-                    class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                  >
-                    
-                    <p class="mb-0 text xm">Pikes-MAM</p>
-                  </div>
-                </div>
-                <div
-                  class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                >
-                  <h6 class="price mb-0">30$</h6>
-                  <button class="btn btn-cart ms-auto">
-                    <i class="fi fi-rr-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="item-product d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <div class="badge-product solde">
-                    Solde
-                  </div>
-                  <a href="#" class="like ms-auto">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                </div>
-                <div class="content-img mb-3">
-                  <img
-                    src="images/veste1.png"
-                    alt="img"
-                    class="w-100 h-100 object-fit-contain"
-                  />
-                </div>
-                <div class="name-article mb-lg-4 mb-3">
-                  <h5 class="mb-1">Veste versace</h5>
-                  <p class="mb-0">XXL</p>
-                  <div
-                    class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                  >
-                    
-                    <p class="mb-0 text xm">Pikes-MAM</p>
-                  </div>
-                </div>
-                <div
-                  class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                >
-                  <h6 class="price mb-0">30$</h6>
-                  <button class="btn btn-cart ms-auto">
-                    <i class="fi fi-rr-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="item-product d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <div class="badge-product solde">
-                    Solde
-                  </div>
-                  <a href="#" class="like ms-auto">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                </div>
-                <div class="content-img mb-3">
-                  <img
-                    src="images/veste2.png"
-                    alt="img"
-                    class="w-100 h-100 object-fit-contain"
-                  />
-                </div>
-                <div class="name-article mb-lg-4 mb-3">
-                  <h5 class="mb-1">Veste pour cérémonie</h5>
-                  <p class="mb-0">XXL</p>
-                  <div
-                    class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                  >
-                    
-                    <p class="mb-0 text xm">Pikes-MAM</p>
-                  </div>
-                </div>
-                <div
-                  class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                >
-                  <h6 class="price mb-0">30$</h6>
-                  <button class="btn btn-cart ms-auto">
-                    <i class="fi fi-rr-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="item-product d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <div class="badge-product solde">
-                    Solde
-                  </div>
-                  <a href="#" class="like ms-auto">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                </div>
-                <div class="content-img mb-3">
-                  <img
-                    src="images/veste3.png"
-                    alt="img"
-                    class="w-100 h-100 object-fit-contain"
-                  />
-                </div>
-                <div class="name-article mb-lg-4 mb-3">
-                  <h5 class="mb-1">Veste doré</h5>
-                  <p class="mb-0">XL</p>
-                  <div
-                    class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                  >
-                    
-                    <p class="mb-0 text xm">Pikes-MAM</p>
-                  </div>
-                </div>
-                <div
-                  class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                >
-                  <h6 class="price mb-0">30$</h6>
-                  <button class="btn btn-cart ms-auto">
-                    <i class="fi fi-rr-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="item-product d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <div class="badge-product solde">
-                    Solde
-                  </div>
-                  <a href="#" class="like ms-auto">
-                    <i class="fi fi-rr-heart"></i>
-                  </a>
-                </div>
-                <div class="content-img mb-3">
-                  <img
-                    src="images/chemise1.png"
-                    alt="img"
-                    class="w-100 h-100 object-fit-contain"
-                  />
-                </div>
-                <div class="name-article mb-lg-4 mb-3">
-                  <h5 class="mb-1">Chemise blache</h5>
-                  <p class="mb-0">M</p>
-                  <div
-                    class="d-flex align-items-center gap-1 block-name-shop mt-1"
-                  >
-                    
-                    <p class="mb-0 text xm">Pikes-MAM</p>
-                  </div>
-                </div>
-                <div
-                  class="content-price-cart mt-auto d-flex align-items-center gap-2"
-                >
-                  <h6 class="price mb-0">30$</h6>
-                  <button class="btn btn-cart ms-auto">
-                    <i class="fi fi-rr-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            </div>
-          </section>
-          <!-- PRODUCTS -->
+           </div>
+          </div>
         </div>
 
         <!-- FOOTER -->
@@ -1464,14 +907,14 @@
           <div class="content-tab d-flex gap-4">
             <a
               href="index.html"
-              class="active d-flex link-tab flex-column flex-1 align-items-center text-center"
+              class="d-flex link-tab flex-column flex-1 align-items-center text-center"
             >
               <div class="icon">
                 <i class="fi fi-rr-home"></i>
               </div>
               <span>Accueil</span>
             </a>
-            <a
+            <!-- <a
               href="index.html"
               class="d-flex link-tab flex-column flex-1 align-items-center text-center"
             >
@@ -1479,7 +922,7 @@
                 <i class="fi fi-rr-apps"></i>
               </div>
               <span>Categories</span>
-            </a>
+            </a> -->
             <a
               href="#panier"
               data-bs-toggle="offcanvas"
@@ -1503,10 +946,10 @@
             </a>
             <a
               href="dashboardClient.html"
-              class="d-flex link-tab flex-column flex-1 align-items-center text-center"
+              class="d-flex link-tab flex-column flex-1 align-items-center text-center active"
             >
               <div class="icon">
-                <i class="fi fi-rr-user"></i>
+                <i class="fi fi-rr-apps"></i>
               </div>
               <span>Compte</span>
             </a>
@@ -1515,7 +958,7 @@
         <!-- TABBAR -->
 
         <!-- BLOCK-SEARCH-MOBILE -->
-        <div class="block-search-mobile d-flex d-lg-none lex-column">
+        <div class="block-search-mobile d-flex flex-column d-lg-none">
           <div class="navSearch">
             <div class="container-fluid">
               <div class="d-flex align-items-center gap-3">

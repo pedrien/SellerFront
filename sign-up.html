@@ -13,99 +13,242 @@
   <body>
     <div class="global-div">
       <div class="wrapper d-flex flex-column">
-        <!-- NAVBAR -->
-        <header class="sticky-top">
-          <nav class="navbar navbar-expand-lg">
-            <div class="content-nav w-100">
-              <div class="container-fluid px-lg-3 px-lg-4 px-xxl-4">
-                <div class="row g-lg-3 g-1">
-                  <div class="col-lg-3 col-xl-2">
-                    <div
-                      class="d-flex align-items-center gap-lg-3 gap-xxl-5 gap-3 h-100"
+       <!-- NAVBAR -->
+       <header class="fixed-top">
+        <nav class="navbar">
+          <div class="content-nav w-100">
+            <div class="container-fluid px-lg-3 px-xxl-4">
+              <div class="row g-lg-3 g-1">
+                <div class="col-lg-3 col-xl-2 col-3">
+                  <div
+                    class="d-flex align-items-center gap-lg-3 gap-xxl-5 gap-3 h-100"
+                  >
+                    <a
+                      href="index.html"
+                      class="logo-app d-flex align-items-center gap-2"
                     >
-                      <a
-                        href="index.html"
-                        class="logo-app d-flex align-items-center gap-2"
-                      >
-                        <img
-                          src="images/logoChakeckak.jpeg"
-                          alt="logo Chackeckak"
-                        />
-                      </a>
-                    </div>
+                      <img
+                        src="images/logoChakeckak.jpeg"
+                        alt="logo Chackeckak"
+                        class="d-none d-lg-block"
+                      />
+                      <img
+                        src="images/iconApp.jpeg"
+                        alt="icon-app"
+                        class="d-block d-lg-none"
+                      />
+                    </a>
                   </div>
-                  <div class="col-lg-6 col-xl-8">
-                    <div
-                      class="content-nav-center h-100 d-flex align-items-center"
-                    >
-                      <div class="d-flex align-items-center w-100 gap-lg-5">
-                        <div class="d-flex align-items-center gap-lg-3">
-                          <div
-                            class="content-location d-flex align-items-center gap-1"
-                          >
-                            <i class="fi fi-rr-marker"></i>
-                            <span>Kinshasa</span>
-                          </div>
-                          <p class="mb-0">Delivery in 8 min</p>
-                        </div>
+                </div>
+                <div class="col-lg-6 col-xl-8 col-6">
+                  <div
+                    class="text-center d-flex flex-column justify-content-center info-location d-lg-none h-100"
+                  >
+                    <p class="mb-0">Livraison</p>
+                    <h6 class="mb-0">
+                      <i class="fi fi-rr-marker"></i> Kinshasa
+                    </h6>
+                  </div>
+                  <div
+                    class="content-nav-center h-100 d-none d-lg-flex align-items-center"
+                  >
+                    <div class="d-flex align-items-center w-100 gap-lg-5">
+                      <div class="d-flex align-items-center gap-lg-3">
                         <div
-                          class="content-search d-flex align-items-center w-50 ms-auto"
+                          class="content-location d-flex align-items-center gap-1"
                         >
-                          <div
-                            class="d-flex align-items-center position-relative w-100"
-                          >
-                            <input
-                              type="text"
-                              class="form-control form-bg"
-                              placeholder="Trouvez un article..."
-                            />
-                            <div class="icon-search">
-                              <i class="fi fi-rr-search"></i>
+                          <i class="fi fi-rr-marker"></i>
+                          <span>Kinshasa</span>
+                        </div>
+                        <p class="mb-0">Delivery in 8 min</p>
+                      </div>
+                      <div
+                        class="content-search d-flex align-items-center w-50 ms-auto"
+                      >
+                        <div
+                          class="d-flex align-items-center position-relative w-100"
+                        >
+                          <input
+                            type="text"
+                            class="form-control form-bg"
+                            placeholder="Trouvez un article..."
+                          />
+                          <div class="block-show-result-search">
+                            <!-- <div class="block-impty d-flex flex-column text-center align-items-center gap-1 mt-4">
+                              <i class="fi fi-rr-search-alt text md"></i>
+                              <p class="text sm muted mb-0">Aucun resultat trouvé</p>
+                            </div> -->
+                            <div class="block-search-recent flex-wrap mb-2">
+                              <div class="item-block">
+                                <a href="#"> Polo </a>
+                                <button class="btn">
+                                  <i class="fi fi-rr-cross"></i>
+                                </button>
+                              </div>
+                              <div class="item-block">
+                                <a href="#"> Jeans </a>
+                                <button class="btn">
+                                  <i class="fi fi-rr-cross"></i>
+                                </button>
+                              </div>
+                              <div class="item-block">
+                                <a href="#"> Chemise </a>
+                                <button class="btn">
+                                  <i class="fi fi-rr-cross"></i>
+                                </button>
+                              </div>
+                              <div class="item-block">
+                                <a href="#"> Radio </a>
+                                <button class="btn">
+                                  <i class="fi fi-rr-cross"></i>
+                                </button>
+                              </div>
+                              <div class="item-block">
+                                <a href="#"> Playstation </a>
+                                <button class="btn">
+                                  <i class="fi fi-rr-cross"></i>
+                                </button>
+                              </div>
                             </div>
+                            <ul class="list-result">
+                              <li>
+                                <a href="#">
+                                  <i class="fi fi-rr-search me-1"></i>
+                                  <span>Patalons</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fi fi-rr-search me-1"></i>
+                                  <span>Polo</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fi fi-rr-search me-1"></i>
+                                  <span> Chemise</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="icon-search">
+                            <i class="fi fi-rr-search"></i>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-xl-2">
-                    <div
-                      class="d-flex align-items-center justify-content-end gap-lg-4 content-nav-right h-100"
+                </div>
+                <div class="col-lg-3 col-xl-2 col-3">
+                  <div
+                    class="d-flex align-items-center justify-content-end gap-lg-4 gap-3 content-nav-right h-100"
+                  >
+                    <a
+                      href="#panier"
+                      class="link-icon d-none d-lg-flex align-items-center justify-content-center tooltip-hover"
+                      data-position-tooltip="bottom"
+                      data-bs-toggle="offcanvas"
+                      aria-controls="offcanvasRight"
                     >
+                      <div class="indice">2</div>
+                      <i class="fi fi-rr-shopping-cart"></i>
+                      <span class="tooltip-indicator"> Panier </span>
+                    </a>
+                    <a
+                      href="favoris.html"
+                      class="link-icon d-none d-lg-flex align-items-center justify-content-center tooltip-hover"
+                      data-position-tooltip="bottom"
+                    >
+                      <i class="fi fi-rr-heart"></i>
+                      <span class="tooltip-indicator"> Favoris </span>
+                    </a>
+                    <a
+                      href="#"
+                      class="link-icon link-search-mobile d-flex d-lg-none align-items-center justify-content-center tooltip-hover"
+                    >
+                      <i class="fi fi-rr-search"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="link-icon d-flex d-lg-none align-items-center justify-content-center tooltip-hover"
+                      data-position-tooltip="bottom"
+                    >
+                      <div class="indice">2</div>
+                      <i class="fi fi-rr-bell"></i>
+                    </a>
+                    <div class="dropdown d-none d-lg-block">
                       <a
-                        href="#panier"
-                        class="link-icon d-flex align-items-center justify-content-center tooltip-hover" data-position-tooltip="bottom" data-bs-toggle="offcanvas" aria-controls="offcanvasRight"
+                        href="#"
+                        class="d-flex"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                       >
-                        <div class="indice">2</div>
-                        <i class="fi fi-rr-shopping-cart"></i>
-                        <span class="tooltip-indicator">
-                          Panier
-                        </span>
-                      </a>
-                      <a
-                        href="favoris.html"
-                        class="link-icon d-flex align-items-center justify-content-center tooltip-hover" data-position-tooltip="bottom"
-                        
-                      >
-                        <i class="fi fi-rr-heart"></i>
-                        <span class="tooltip-indicator">
-                          Favoris
-                        </span>
-                      </a>
-                      <a href="login.html">
                         <div class="avatar">
                           <div class="icon-avatar">
-                            <i class="fi fi-rr-user"></i>
+                            JD
+                            <!-- <i class="fi fi-rr-user"></i> -->
                           </div>
                         </div>
                       </a>
+                      <ul class="dropdown-menu dropdown-menu-end lg">
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="avatar">
+                            <div class="icon-avatar">
+                              <i class="fi fi-rr-user"></i>
+                            </div>
+                          </div>
+                          <div class="info-user">
+                            <h6 class="mb-0 sm text">John Doe</h6>
+                            <p class="text xm muted mb-0">Super admin</p>
+                          </div>
+                        </div>
+                        <hr class="my-2" />
+                        <li>
+                          <a
+                            class="dropdown-item d-flex align-items-center gap-2"
+                            href="#"
+                          >
+                            <i class="fi fi-rr-user"></i>
+                            Mon profil
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item d-flex align-items-center gap-2"
+                            href="mescommandes.html"
+                          >
+                            <i class="fi fi-rr-shopping-cart"></i>
+                            Mes commandes
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item d-flex align-items-center gap-2"
+                            href="#"
+                          >
+                            <i class="fi fi-rr-bell"></i>
+                            Notifications
+                          </a>
+                        </li>
+                        <li class="li-border">
+                          <a
+                            class="dropdown-item d-flex align-items-center gap-2"
+                            href="#"
+                          >
+                            <i class="fi fi-rr-sign-out-alt"></i>
+                            Déconnexion
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </nav>
-        </header>
-        <!-- NAVBAR -->
+          </div>
+        </nav>
+      </header>
+      <!-- NAVBAR -->
 
         <div class="content-page flex-grow-1">
           <div class="block-login my-lg-4 my-3">
